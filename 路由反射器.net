@@ -1,0 +1,84 @@
+autostart = False
+version = 0.8.3
+[127.0.0.1:7200]
+    workingdir = C:\Users\asus\AppData\Local\Temp
+    udp = 10000
+    [[3640]]
+        image = D:\ccnp\C3640-IK.BIN
+        idlepc = 0x605a5ff4
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R4]]
+        model = 3640
+        console = 4004
+        aux = 2504
+        slot0 = NM-4T
+        s0/1 = R3 s0/0
+        x = 331.0
+        y = -104.0
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3640
+        console = 4001
+        aux = 2501
+        slot0 = NM-4T
+        s0/0 = R2 s0/1
+        x = -450.0
+        y = -97.0
+        z = 1.0
+        hx = 18.0
+        hy = -25.0
+    [[ROUTER R2]]
+        model = 3640
+        console = 4002
+        aux = 2502
+        slot0 = NM-4T
+        s0/0 = R3 s0/1
+        s0/1 = R1 s0/0
+        x = -193.0
+        y = -94.0
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3640
+        console = 4003
+        aux = 2503
+        slot0 = NM-4T
+        s0/0 = R4 s0/1
+        s0/1 = R2 s0/0
+        x = 54.0
+        y = -102.0
+        z = 1.0
+[GNS3-DATA]
+    m11 = 0.707106781187
+    m22 = 0.707106781187
+    [[NOTE 1]]
+        text = "s0/1"
+        x = -6.87765402403
+        y = 25.1261333209
+        interface = R4 s0/1
+    [[NOTE 2]]
+        text = "s0/0"
+        x = 72.877654024
+        y = 18.8738666791
+        interface = R3 s0/0
+    [[NOTE 3]]
+        text = "s0/1"
+        x = -6.75265317346
+        y = 26.441459858
+        interface = R3 s0/1
+    [[NOTE 4]]
+        text = "s0/0"
+        x = 72.7526531735
+        y = 17.558540142
+        interface = R2 s0/0
+    [[NOTE 5]]
+        text = "s0/1"
+        x = -6.91702129391
+        y = 24.575152621
+        interface = R2 s0/1
+    [[NOTE 6]]
+        text = "s0/0"
+        x = 72.9170212939
+        y = 19.424847379
+        interface = R1 s0/0
