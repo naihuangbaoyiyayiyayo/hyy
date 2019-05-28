@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+.header{
+    min-width: 1100px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ededed;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    transition: all 0.5s ease-in;
+}
+.b {
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1100;
+    height: 70px;
+    zoom: 1;
+}
+.p {
+    display: inline-block;
+    width: 72px;
+    height: 25px;
+    margin-top: 22.5px;
+    background-size: 72px 25px;
+    background-image: url(youzan.png);
+}
+
+.whole{
+    display: inline-block;
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom: -1px;
+}
+
+.nav-link{
+    float: left;
+    width: 78px;
+    color: #999;
+    font-size: 10px;
+    font-family: 'PingFang SC';
+    font-weight: 300;
+    line-height: 13px;
+    margin:0px;
+    padding: 0px;
+    border:0px;
+}
+.nav-list{
+    float: right;
+    zoom: 1;
+
+}
+
+.center{
+    padding: 0px 20px;
+    float: left;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.s{
+    text-decoration: none;
+    color: #FF4444;
+}
+
+.h{
+    text-decoration: none;
+    color: #2c3a46;
+}
+
+.yy{
+    width: 80px;
+    height: 30px;
+    line-height: 28px;
+    display: inline-block;
+    border: 1px solid #2B90ED;
+    color: #2B90ED;
+    text-align: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.yy1{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: #2B90ED;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.jj{
+    width: 80px;
+    height: 30px;
+    line-height: 28px;
+    display: inline-block;
+    border: 1px solid #2B90ED;
+    color: #2B90ED;
+    text-align: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.jj1{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: #2B90ED;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header2{
+    height: 420px;
+    width: 100%;
+}
+
+.p2{
+    position: absolute;
+    right: -100px;
+    width: 1580px;
+    height: 420px;
+    background-size: cover;
+    background-position: 100%;
+    background-image: url(youzan1.jpg);
+}
+
+.header3{
+    position: absolute;
+    width: 1000px;
+    height: 420px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.h1{
+    margin-top: 100px;
+    display: block;
+    font-size: 2.53em;
+}
+
+.h2{
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 55px;
+}
+
+.yy2{
+    width: 160px;
+    height: 40px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    background: #38f;
+    padding: 12px 42px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.h3{
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
+    display: block;
+}
+
+.header4{
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.left{
+    position: absolute;
+    top: 260px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image: url(L.png);
+    cursor: pointer;
+}
+
+.right{
+    position: absolute;
+    top: 260px;
+    left: 980px;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image: url(R.png);
+    cursor: pointer;
+}
+
+.header5{
+    height: 620px;
+}
+
+.header6{
+    min-width: 1005px;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.h4{
+    font-family: PingFangSC-Medium;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 60px;
+}
+.youzhanshangchengjiemian
+{
+    -webkit-box-flex: 1;
+}
+.wenzibufen
+{
+    margin-bottom: 28px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.wenzi
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font: inherit;
+    font-size: 100%
+}
+.xiaowenzi
+{
+    margin-top: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.bulebut
+{
+    margin-right: 15px;
+    background-color: #38f;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 42px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+.whitebut
+{
+    margin-left: 15px;
+    border: 1px solid #38f;
+    color: #38f;
+    padding: 9px 42px;
+    text-decoration: none;
+}
+.shopkuangjia
+{
+    position:absolute;
+    left: 100px;
+
+}
+.shoptupian
+{
+    width: 615px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    position:absolute;
+    left: 450px;
+
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="b">
+         <div class="p"></div>
+         <div class="whole">
+                <p class="nav-link">香港上市代码</p>
+                <p class="nav-link">08083.HK</p>
+         </div>
+        <ul class="nav-list">
+
+             <li class="center"><a class="s">首页</a>
+                </li>
+                <li class="center"><a class="h">商家服务</a>
+                </li>
+                <li class="center"><a class="h">消费者<img src=></a>
+                    </li>
+                    <li class="center"><a class="h">渠道合作</a>
+                    </li>      
+                    <li class="center"><a class="h">有赞云</a>
+                    </li>
+                    <li class="center"><a class="h">更多服务</a>
+                    </li>
+                    <li class="yy"><a class="jj">登录</a>
+                    </li>
+                    <li class="yy1"><a class="jj1">注册</a>
+                    </li>
+                </ul>
+</div>
+</div>
+
+
+<div class="header2">
+    <div class="p2"></div>
+    <div class="header3">
+        <div class="h1">有赞微商城</div>
+        <div class="h2">一个软件解决网上开店所有问题</div>
+        <div class="yy2">免费试用</div>
+        <div class="h3">或致电 0571 - 8685 7988</div>
+    </div>
+
+    <div class="header4">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</div>
+
+
+<div class="header5">
+    <div class="header6">
+        <div class="h4">有赞微商城 全行业全场景的电商解决方案</div>
+        <div class="youzhanshangchengjiemian">
+            <div class="shopkuangjia">
+                <div class="wenzibufen">
+                    <p class="wenzi">3分钟搭建移动商城</p>
+                    <p class="xiaowenzi">深挖行业特点 匹配产品功能，提供全行业解决方案</p>
+                </div>
+                <div class="wenzibufen">
+                    <p class="wenzi">近百种营销工具</p>
+                    <p class="xiaowenzi">社群营销&amp;节日营销，拉新、转化、复购面面俱到</p>
+                </div>
+                <div class="wenzibufen">
+                    <p class="wenzi">系统化管理客户</p>
+                    <p class="xiaowenzi">客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                </div>
+                <div class="wenzibufen">
+                    <p class="wenzi">分销拓展销售渠道</p>
+                    <p class="xiaowenzi">客户帮你卖，员工帮你卖，300万商家帮你卖</p>
+                </div>
+                <div class="wenzibufen">
+                    <a href="" class="bulebut" style="margin-right: 15px">免费试用</a> 
+                    <a href="" class="whitebut" style="margin-left: 15px">功能介绍</a>
+                </div>
+            </div>
+            <div class="shoptupian">
+                <img src="youzan2.png">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
